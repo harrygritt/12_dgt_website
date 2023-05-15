@@ -1,5 +1,7 @@
 body{
     background-color: #565656;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .heading{
@@ -14,4 +16,49 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    width: 95vw;
+    top: 10px;
+    left: 2.5vw;
+
+    background: #4D8DBB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1e+07px;
+}
+
+.navbar a {
+    float: left;
+    margin: 0;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.navbar a:hover{
+    background-color: #565656;
+}
+
+.logo-container{
+    float: left;
+    height: 100%;
+    padding: 12.5px;
+}
+
+.right-centre {
+    float: right;
+    height: 100%;
+    padding-right: 18px;
+}
+
+.right-centre  a{
+    padding: 14px 16px;
 }
