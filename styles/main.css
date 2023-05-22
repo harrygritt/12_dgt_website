@@ -16,7 +16,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: margin 700ms;
 }
+
+@media only screen and (max-width: 1200px) {
+    .heading{
+        margin-top: 40px;
+    }
+  }
 
 .navbar {
     overflow: hidden;
@@ -61,4 +68,15 @@ body{
 
 .right-centre  a{
     padding: 14px 16px;
+}
+
+.grid-container {
+    display: grid;
+    background-color: blue;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid-item {
+    padding: 10px;
 }
