@@ -72,11 +72,16 @@ body{
 
 .grid-container {
     display: grid;
-    background-color: blue;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .grid-item {
     padding: 10px;
+}
+
+.grid-item.home-page {
+    background-color: white;
+    grid-template-columns: minmax(150px, auto);
+    grid-auto-columns: 150px;
 }
