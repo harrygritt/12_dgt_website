@@ -24,8 +24,8 @@ body{
         margin-top: 40px;
     }
 
-    .grid-item.home-page {
-        
+    .grid-item {
+      
     }
 
   }
@@ -54,7 +54,6 @@ body{
     cursor: pointer;
 }
 
-
 .navbar a:hover{
     background-color: #565656;
 }
@@ -78,21 +77,11 @@ body{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.grid-item {
-    grid-auto-columns: 400px;
+    grid-column-gap: 100px;
 }
 
 .grid-item.home-page {
     background-color: white;
-    grid-template-columns: minmax(400px, auto);
-    
-}
-
-.grid-item.home-grid-gap {
-    grid-template-columns: 1fr;
 }
 
 img {
