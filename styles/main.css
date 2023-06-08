@@ -11,6 +11,7 @@ h1 {
     font-size: 9vw;
     line-height: 100px;
     color: #4D8DBB;
+    text-decoration: none;
 
     width: 100%;
     display: flex;
@@ -33,21 +34,26 @@ h1 {
     width: 95vw;
     top: 10px;
     left: 2.5vw;
-
     background: #4D8DBB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 1e+07px;
+
+    display: grid;
+    grid-template-columns: .25fr 2fr repeat(4, .75fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .navbar a {
-    float: left;
     margin: 0;
-    display: block;
     color: #565656;
-    text-align: center;
+
     font-size: 17px;
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
+    padding: 5%;
 }
 
 .navbar a:hover{
@@ -55,27 +61,6 @@ h1 {
     color: #4D8DBB;
 }
 
-.logo-container{
-    float: left;
-    justify-content: center;
-    height: 100%;
-    padding: 12.5px;
-}
-
-.logo-container img {
-    height: 19px;
-    width: auto;
-}
-
-.right-centre {
-    float: right;
-    height: 100%;
-    padding-right: 18px;
-}
-
-.right-centre  a{
-    padding: 14px 16px;
-}
 
 .grid-container-home {
     display: grid;
@@ -99,10 +84,16 @@ img {
     object-fit: contain;
 }
 
-p {
+.body-text p {
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
     font-size: 200%;
     color: #4D8DBB;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 64px;
+    
 }
