@@ -1,6 +1,9 @@
 body {
     background-color: #565656;
     margin: 0;
+}
+
+*{
     transition: all 0.5s ease-in-out;
 }
 
@@ -20,12 +23,6 @@ h1 {
     transition: margin 700ms;
 }
 
-@media only screen and (max-width: 1200px) {
-    h1 {
-        margin-top: 100px;
-    }
-
-  }
 
 .navbar {
     overflow: hidden;
@@ -70,11 +67,15 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit  , minmax(500px , 4fr));
-    grid-auto-rows: repeat(auto-fit  , minmax(500px , 4fr));
+    grid-template-columns: repeat(2  , 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 10%;
     grid-row-gap: 2%;
     padding: 0% 10% 5% 10%;
+}
+
+.page2 img:hover{
+    opacity: 0.5;
 }
 
 img {
@@ -104,3 +105,16 @@ img {
 p.nav{
     vertical-align: middle;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    h1 {
+        margin-top: 100px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1  , 1fr); 
+        
+    }
+
+  }
