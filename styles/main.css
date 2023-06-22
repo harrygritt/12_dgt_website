@@ -97,6 +97,11 @@ img {
     padding: 2%;
 }
 
+.top-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .logo{
     font-size: 64px;
     
@@ -107,14 +112,18 @@ p.nav{
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     h1 {
         margin-top: 100px;
     }
 
     .grid-container {
         grid-template-columns: repeat(1  , 1fr); 
-        
+    }
+
+    .top-text {
+        grid-column-start: 1;
+        grid-column-end: 1;
     }
 
   }
